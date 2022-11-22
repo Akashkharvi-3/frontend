@@ -1,0 +1,26 @@
+<html>
+    <head>aaaa</head>
+    <body>
+        <p>value or not for age </p>
+        <input type='age' value=''/>
+        <button onclick='agefunction()'>enter age</button>
+        <p id='box'></p>
+        <script>
+            function agefunction()
+            {
+                var age,eligible;
+                age=Number(document.getElementById('age').value);
+                if(isNaN(age))
+                {
+                    eligible="its not number";
+                }
+                else{
+                    eligible=(age<18)?"its too young for vote":"eligible for vote";
+
+                }
+            document.getElementById('box').innerHTML=eligible;
+            }
+        </script>  
+    </body>
+
+</html>
