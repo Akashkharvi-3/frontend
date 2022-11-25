@@ -13,14 +13,15 @@ console.log(ab) */
 var ids = {id:101,
     name:"akash",
     salary:125000}
-/* for(k in ids)
+for(k in ids)
 {
-  console.log(ids)
+    console.log(Object.values(ids))
 }
- 
-console.log(Object.values(ids))*/
 
-var emp = {id:101,name:"akash",sal:180000}
+
+
+
+/* var emp = {id:101,name:"akash",sal:180000}
 
 if(Object.keys(emp).length==0)
 {
@@ -29,4 +30,4 @@ if(Object.keys(emp).length==0)
 else
 {
     console.log("not empty")
-}
+} */
