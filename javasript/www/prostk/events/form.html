@@ -1,0 +1,38 @@
+<html>
+    <head></head>
+    <body>
+        <h1>form validtaion</h1>
+        <form onsubmit=" return validate()">
+        <label for="">user name</label>
+        <input type="text" id="usernm"><br />
+        <span id="spanid" style="color:red"></span>
+        <label for="">email</label>
+        <input type="text" id="emailid"><br />
+        <span id="spanid2" style="color:red";></span>
+        <input type="submit">
+        </form>
+     </body>
+     <script>
+        function validate()
+        {
+            var name=document.getElementById('usernm').value;
+            var email=document.getElementById('emailid').value;
+            if(name=="")
+            {
+             document.getElementById('spanid').innerHTML="enter name"
+          return false;
+            }
+          if(name.length<6)
+          {
+            document.getElementById('spanid').innerHTML="name should be min 8 charctr"
+            return false
+        }
+        if(email=="")
+            {
+             document.getElementById('spanid2').innerHTML="enter email"
+          return false;
+    }
+        }
+
+     </script>
+</html>
