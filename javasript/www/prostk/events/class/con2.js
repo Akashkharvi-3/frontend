@@ -10,5 +10,6 @@ class account
 }}
 var c1=new account(101,"akash")
 var c2=new account(102,"vignesh")
-console.log(c1)
+ console.log(c1)
 console.log(c2)
+ 
