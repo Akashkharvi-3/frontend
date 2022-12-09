@@ -1,0 +1,17 @@
+/* [class|="sample"]{
+    background-color: red; //pipeline
+} */
+
+/* 
+ [class^="sample"]{
+background-color: red; //does not have to be whole wolrd but begin must need
+}  */
+
+
+/* [class$="sample"]{
+    background-color: red; //but end need specfd vslue only
+} */
+
+[class*="le"]{
+    background-color: red; 
+}
