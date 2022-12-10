@@ -10,6 +10,5 @@ const person={
     getbirth:function age(){
         return 2022-this.age;
     }};
-    let val;
-    val=person
-    console.log(val.getbirth());
+
+    console.log(person.getbirth());
