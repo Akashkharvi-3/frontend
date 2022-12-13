@@ -1,0 +1,21 @@
+<html>
+  <body>
+   <button onclick="clearInterval(cl)">stop</button>
+   <button onclick="setInterval(mytimes,1000)">start</button>
+
+    <p id="box"></p>
+    <script>
+function mytimes()
+{
+    const a = new Date()
+    document.querySelector("#box").innerHTML=a.toLocaleTimeString()
+}
+
+let cl=setInterval(mytimes,1000)
+
+
+
+
+</script>
+  </body>  
+</html>
