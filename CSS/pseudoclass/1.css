@@ -1,6 +1,17 @@
-button:hover{
+/* button:hover{
     background-color: red;
 }
 input:focus{
     background-color:green;
+}
+ */
+
+ [type="text"]
+ {
+ background-color:yellow;
+}
+
+[type="button"]
+{
+background-color:rgb(233, 5, 233);
 }
