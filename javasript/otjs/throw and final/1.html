@@ -1,29 +1,29 @@
+
+
+
 <html>
     <body>
-        <input id="num" type="text">
-        <button type="button" onclick="myFunction()"   >enter num</button>
+        <input type="text" id="num">
+        <button type="button" onclick="myfunction()">enter num</button>
         <p id="textmsg"></p>
         <script>
-function myFunction()
-{
-    let  x,y
-    y=document.getElementById("textmsg")
-    y.innerHTML="";
-    
-    x=document.getElementById("num").value
-    try{
-        if(x=="")throw "its empty praveena"
-          if(isNaN(x))throw "not a number"
-          if(x>100)throw "maxmimun num"
-                if(x<100)throw "low num"
-                 
-    }
-    catch(err)
-    {
-        y.innerHTML=err
-    }
-}
-
-            </script>
+        function myfunction()
+        {
+            let x,y
+           x= document.getElementById("num").value
+           y= document.getElementById("textmsg")
+           try{
+            if(x=="")throw "empty value"
+            if(isNaN(x))throw "not a number"
+            if(x>100)throw "the value greter than 100" 
+            if(x<100)throw "the value lesser than 100" 
+           }
+            catch(err)
+            {
+                y.innerHTML=err
+            }
+        }
+        </script>
     </body>
 </html>
+
