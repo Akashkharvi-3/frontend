@@ -12,4 +12,4 @@ showtime()
 
 setTimeout(() => {
     console.log("gm")
-}, 5000);
+}, 1000);

@@ -1,0 +1,20 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1> hai timevents </h1>
+        <p id="box"></p>
+        <script>
+        
+                    
+             function mytime()
+             {
+                let c= new Date()
+                let times=c.toLocaleTimeString()
+                document.querySelector("#box").innerHTML=times
+             }
+       let tim=    setInterval(mytime,1000)
+       // clearTimeout(times)
+        </script>
+    </body>
+</html>
