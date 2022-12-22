@@ -1,0 +1,47 @@
+<!-- HOW TO IMPLEMENT CLASSS INHERITANCE??
+
+A class can be extended by the another class and new class will inherit all of its parent class method
+the object that inititailse  child  class will able to use method from classes -->
+
+<html>
+    <body>
+        <script>
+
+class Car
+{
+    constructor(model,name)
+    {
+        this.name=name
+        this.model=model
+    }
+    start()
+    {
+        console.log(`name of the car is ${this.name}`)
+    }
+    stop()
+    {
+        console.log(`stop the car`)
+    }
+}
+
+class Electrical_car extends Car {
+    drive(){
+        console.log("gm")
+    }
+    start()
+    {
+    super.start()
+    super.stop()
+    this.drive()
+  
+}}
+
+let cc=new Electrical_car(1221,"omni")
+cc.start()
+</script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,20 @@
+
+<html>
+    <body>
+        <script>
+
+let duplicateArray=[1,2,3,3,4,5,6,8,8,4]
+
+let duplicate=duplicateArray.reduce((obj,month)=>
+{
+    if(obj[month]==undefined){
+        obj[month]=1
+        return obj;
+    }
+    obj[month]++
+        return obj;
+},{})
+console.log(duplicate)
+</script>
+</body>
+</html>
