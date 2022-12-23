@@ -5,11 +5,33 @@
     <body>
         <script>
 
-let duplicateArray=[1,2,3,3,4,5,6,8,8,4]
+let duplicateArray=[1,2,3,3,4,5,6,8,8,4,11,55,11,33]
 
+/* 
+            using filter method
 let duplicate=duplicateArray.filter((ele,index,arr)=>arr.indexOf(ele)!==index)
-console.log(duplicate)
-</script>
+console.log(duplicate) */
+
+
+
+
+/* using for of */
+
+let obj={}
+for(duplicate of duplicateArray){
+    obj[duplicate]=true
+}
+let a=Object.keys(obj)
+console.log(a)
+/* 
+
+using set one line code
+
+console.log([...new Set(duplicateArray)])
+ */
+
+
+</script> 
 </body>
 </html>
 
