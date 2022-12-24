@@ -9,7 +9,7 @@ let duplicateArray=[1,2,3,3,4,5,6,8,8,4,11,55,11,33]
 
 /* 
             using filter method
-let duplicate=duplicateArray.filter((ele,index,arr)=>arr.indexOf(ele)!==index)
+let duplicate=duplicateArray.filter((ele,index,arr)=>arr.indexOf(ele)!==index) //!== means tells which value duplicate  == means total shows the value but not show duplicate 
 console.log(duplicate) */
 
 
@@ -17,18 +17,19 @@ console.log(duplicate) */
 
 /* using for of */
 
-let obj={}
+/* let obj={}
 for(duplicate of duplicateArray){
-    obj[duplicate]=true
+obj[duplicate]=true
 }
 let a=Object.keys(obj)
-console.log(a)
+console.log() */
 /* 
 
 using set one line code
 
 console.log([...new Set(duplicateArray)])
  */
+console.log([... new Set(duplicateArray)])
 
 
 </script> 
