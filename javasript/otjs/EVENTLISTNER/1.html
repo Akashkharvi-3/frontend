@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,10 +11,50 @@
     <p id="id2"></p>
     <script>
         document.getElementById("id1").addEventListener("click",function(){
-           document.getElementById("id2").innerText="hai hello";
+           document.getElementById("id2").innerText="hai hello";})
+           document.getElementById("id1").addEventListener("mouseneter",function(){
+           document.getElementById("id2").style.backgroundColor="red";
+
 
         })
         </script>
 </body>
 
-</html>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+        <script>
+            function onfoc(a)
+            {
+            a.style.color="red"
+a.style.backgroundColor="blue"
+
+            }
+            function onblr(b)
+            {
+            b.style.color="blue"
+b.style.backgroundColor="red"
+
+            }
+            </script>
+    </head>
+   <body>
+<input type="text" onfocus="onfoc(this)" onblur="onblr(this)">
+        </body>
