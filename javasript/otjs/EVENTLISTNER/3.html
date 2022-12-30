@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="id1">click here</button>
+    <p id="p1"></p>
+   <input type="button" value="enter" id="bt2">
+   <input type="button" value="remove" onclick="removed()">
+    <script>
+        id1.addEventListener("click",function(){
+            document.getElementById("p1").innerHTML="hai welcome"
+
+        })
+     
+        bt2.addEventListener("mouseover",changeColor)
+        bt2.addEventListener("mouseover",Color)
+          function changeColor(){
+            this.style.background="green";
+          } 
+         
+          function Color(){
+            this.style.color="blue";
+          } 
+
+          function removed(){
+            bt2.removeEventListener("mouseover",changeColor)
+          }
+
+          
+    </script>
+</body>
+</html>
