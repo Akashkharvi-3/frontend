@@ -4,5 +4,6 @@ return  emp.toUpperCase()
 })
 console.log(b)
      */
+    //join concat
 let b=employees.join(" ")
 console.log(b)
