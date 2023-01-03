@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display:grid;
+       /*  grid-template-columns:200px 200px 200px */
+        grid-template-columns:repeat(3,auto)}
+        .item{
+            padding:3rem;
+             border:#ccc solid 1px;
+             background: green;
+             text-align:center;
+             font-size:1.3rem;
+             font-weight: bold;
+        }
+        main{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            grid-gap:1.5rem
+
+        }
+    </style>
+ </head>
+ <body>
+    <div class="grid">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+    </div>
+    <main>
+    <selection>
+        <h1>hii</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </selection>
+  <aside>
+    <h1>hello</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+</aside>
+</main>
+ </body>
+ </html>
