@@ -24,15 +24,15 @@ nav{
     z-index: 1;
 } 
 .logo{
-    width: 60% ;
+    width: 35% ;
     height: 100px;
     
 }
  .logo h1{
-    line-height:60px;  
-    padding: 15px;   
+    line-height:35px;  
+    padding-top: 1.6rem;
     padding-left:5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }  
 ul{
     color:var(--primary-color);
@@ -42,6 +42,7 @@ ul{
     width: 50% ;
     height: 8vh;
     justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
     color:var(--primary-color);
@@ -51,7 +52,8 @@ ul{
 
 }
 .items li a{
-    font-size: 1.5 rem;
+    font-size: 1.2rem;
+    padding-right:1rem;
     font-weight:  bolder;
     text-transform: uppercase;
     color:var(--primary-color);
@@ -61,7 +63,7 @@ ul{
     font-weight:border;
     font-size: 3rem;
     text-align: center;
-    padding-top:5rem;
+    padding-top:2rem;
 background-color: #f8b90c;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -69,16 +71,65 @@ text-transform:uppercase;
 
 }
 .font h2{
-    padding-top: 10 rem;
+    padding-top: 10rem;
 }
 
 h4{
-     padding-top: 10 rem;
-font-size: 0.5 rem;
+    
+font-size: 1.5rem;
 text-align: center;
 background: #e7e4da;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-padding-top: 1.5 rem;
+padding-top: 1rem;
+
 text-justify:newspaper;
+}
+
+.font h3{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    background: #e7e4da;
+    -webkit-background-clip: text;
+-webkit-text-fill-color:transparent;
+    text-transform: uppercase;
+
+
+}
+.font h5{
+    font-weight:bolder;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top:3rem;
+    background-color: #e7e4da;
+    -webkit-background-clip: text;
+   
+-webkit-text-fill-color: transparent;
+
+    text-justify:distribute-all-lines;
+}
+#hero{
+    height:35rem;
+}
+    
+
+#about-img{
+    width: 25rem;
+    height:25rem;
+}
+.about-heading{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.about-body{
+  display: flex;
+  justify-content: space-between;
+  padding-right:2rem;
+  padding-left:2rem;
+}
+.about-content{
+    padding-right:3rem;
+    padding-left:3rem;
 }
