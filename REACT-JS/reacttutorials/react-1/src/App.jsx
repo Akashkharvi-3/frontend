@@ -1,5 +1,5 @@
 import React from 'react'
-import CompA from './props/compA.js'
+import User from './props/User.js'
 import Navbar from './Navbar/Navbar'
 
 
@@ -7,7 +7,7 @@ let App=()=> {
     return <div>
      
         <Navbar/>
-        <CompA/>
+        <User/>
  
     </div>
 
