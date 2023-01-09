@@ -133,3 +133,67 @@ text-justify:newspaper;
     padding-right:3rem;
     padding-left:3rem;
 }
+
+/* service section */
+
+.services-heading{
+    padding-top:10rem;
+    padding-bottom:10rem;
+}
+
+.services{
+    display:grid;
+    justify-content:space-around;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:2rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-bottom:5rem;
+}
+
+/* articles */
+
+.article-img{
+    width:30rem;
+    height:15rem;
+}
+
+.article-heading{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.article-1{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem;
+    justify-content: space-between;
+    padding-left:3rem;
+    padding-right: 3rem;
+}
+
+.article-2{
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem;
+    justify-content: space-between;
+    padding-left:3rem;
+    padding-right: 5rem;
+  
+}
+
+.article-3{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem;
+    justify-content: space-between;
+    padding-left:3rem;
+    padding-right: 3rem;
+}
+
