@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
-import Counter from './Counter/Counter';
 
+import Product from './Product/Product'
 
 
 let App=()=> {
@@ -9,7 +9,8 @@ let App=()=> {
 
   
         <Navbar/>
-        <Counter/>
+      {/*   <Counter/> */}
+        <Product/>
       
  
     </div>
