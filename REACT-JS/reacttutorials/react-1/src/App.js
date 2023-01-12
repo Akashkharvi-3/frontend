@@ -1,7 +1,10 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 
-import Product from './Product/Product'
+import Binding from './Binding/Binding';
+import Binding2 from './Binding/Binding2';
+
+/* import Product from './Product/Product' */
 
 
 let App=()=> {
@@ -9,8 +12,10 @@ let App=()=> {
 
   
         <Navbar/>
+        <Binding/>
+        <Binding2/>
       {/*   <Counter/> */}
-        <Product/>
+      {/*   <Product/> */}
       
  
     </div>
