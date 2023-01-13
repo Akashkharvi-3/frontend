@@ -1,7 +1,9 @@
 import React from 'react';
 
 import Navbar from './Navbar/Navbar';
-import Clock from './Lifecycle_clock/Clock';
+import Login2 from './Form/Login2';
+/* import Login from './Form/Login'; */
+/* import Clock from '../../react-2/Lifecycle_clock/Clock'; */
 /* import Employees from './Data/Employees' */
 
 /* import Binding from './Binding/Binding';
@@ -17,8 +19,10 @@ let App=()=> {
 
   
         <Navbar/>
+        <Login2/>
+       {/*  <Login/> */}
       {/*   <Employees/> */}
-         <Clock/>
+      {/*    <Clock/> */}
        {/*  <Binding/>
         <Binding2/> */}
       {/*   <Counter/> */}
