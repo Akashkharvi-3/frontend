@@ -1,7 +1,9 @@
 import React from 'react';
 
 import Navbar from './Navbar/Navbar';
-import Login2 from './Form/Login2';
+/* import Login2 from './Form/Login2'; */
+import Registartion from './Form/Registration';
+
 /* import Login from './Form/Login'; */
 /* import Clock from '../../react-2/Lifecycle_clock/Clock'; */
 /* import Employees from './Data/Employees' */
@@ -19,7 +21,8 @@ let App=()=> {
 
   
         <Navbar/>
-        <Login2/>
+        <Registartion/>
+        {/* <Login2/> */}
        {/*  <Login/> */}
       {/*   <Employees/> */}
       {/*    <Clock/> */}
