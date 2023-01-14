@@ -1,22 +1,23 @@
 import React from "react";
+import {Link} from 'react-router-dom' 
 class Navbar extends React.Component{
 render(){
 return <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-    <a className="nav-link" href="#">React examples</a>
-    <div className="ml-auto">
-        <ul className="navbar-nav">
-            <li className="nav-list">
-                <a className="nav-link" href="#">Home</a>
+     <Link to="/Home" className="nav-link">React examples</Link>
+    <div className="ml-auto"> {/* for right side */}
+        <ul className="navbar-nav">{/*use for single line*/}
+            <li >
+                <Link to="/home" className="nav-link">Home</Link>
             </li>
             <li className="nav-list">
-                <a className="nav-link" href="#">about</a>
+                <Link to="/about" className="nav-link">About</Link>
             </li>
             <li className="nav-list">
-                <a className="nav-link" href="#">Contact</a>
+                <Link to="/contact" className="nav-link">Contact</Link>
             </li>
             
         </ul>
     </div>
 </nav>
 }}
-export default Navbar
+export default NavbarclassName="nav-list"
