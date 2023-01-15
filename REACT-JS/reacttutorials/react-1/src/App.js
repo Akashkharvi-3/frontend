@@ -3,6 +3,7 @@ import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Home from './Dummy/Home'
 import About from './Dummy/About'
 import Contact from './Dummy/Contact'
+import User from './user/User'
 
 import Navbar from './Navbar/Navbar';
 /* import Login2 from './Form/Login2'; */
@@ -25,7 +26,9 @@ let App=()=> {
 
   <Router>
   <Navbar/>
+  
   <Switch>
+  <Route path="/User" component={User}/>
     <Route path="/Home" component={Home}/>
      <Route path="/About" component={About}/>
      <Route path="/Contact" component={Contact}/>
