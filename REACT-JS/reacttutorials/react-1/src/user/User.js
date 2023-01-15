@@ -45,7 +45,7 @@ class User extends Component{
                                     
                                    
                                      }
-           cd                     </tbody>
+                               </tbody>
                             
                         </table>
                     </div>
