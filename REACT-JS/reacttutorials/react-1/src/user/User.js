@@ -17,13 +17,13 @@ class User extends Component{
     }
     render(){
         return <div>
-            <div className="container mt-5">
-            <div className="row">
+            <div class="container mt-5">
+            <div class="row">
                 <pre>{JSON.stringify(this.state.users)}</pre>
                 {
                     this.state.users.length>0?<>
-                    <div className="col-md-8">
-                        <table className="table table-hover">
+                    <div class="col-md-8">
+                        <table class="table table-hover">
                             <thead className="bg-dark text-white">
                                 <tr>
                                     <th>name</th>

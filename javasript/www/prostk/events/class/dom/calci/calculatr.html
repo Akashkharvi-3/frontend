@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="./1.css">
     <script type="text/javascript">
         function view(num)
         {
@@ -13,45 +14,46 @@
            document.getElementById("result").value=y
         }
 
-        function clea()
+        function clr()
         {
             document.getElementById("result").value=""
         }
     </script>
     </head>
     <body>
-        <center>
-        <table border="2">
-            <tr>
-                <td colspan="3"><input type="text" id="result"></td>
-        <td><input type="button" value="c" onclick="clea()"></td>
-            </tr>
-            <tr>
-        <td><input type="button" value="1" onclick="view('1')"></td>
-        <td><input type="button" value="2" onclick="view('2')"></td>
-        <td><input type="button" value="3" onclick="view('3')"></td>
-        <td><input type="button" value="/" onclick="view('/')"></td>
-        </tr>
-        <tr>
-        <td><input type="button" value="4" onclick="view('4')"></td>
-        <td><input type="button" value="5" onclick="view('5')"></td>
-        <td><input type="button" value="6" onclick="view('6')"></td>
-        <td><input type="button" value="-" onclick="view('-')"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="7" onclick="view('7')"></td>
-            <td><input type="button" value="8" onclick="view('8')"></td>
-            <td><input type="button" value="9" onclick="view('9')"></td>
-            <td><input type="button" value="+" onclick="view('+')"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="." onclick="view('.')"></td>
-                <td><input type="button" value="0" onclick="view('5')"></td>
-                <td><input type="button" value="=" onclick="submt()"></td>
-                <td><input type="button" value="*" onclick="view('*')"></td>
-                </tr>
+        <section class="calci">
+        <form>
+            <input type="text" id="result"/>
             
-        </table>
-    </center>
+        </form>
+        <div class="button1">
+        <input type="button" class="btn btn-clr" value="C" onclick="clr()"/>
+    </div>
+       <div class="buttons">
+
+        <input type="button" class="btn btn-yellow" value="1" onclick="view('1')"/>
+        <input type="button" class="btn btn-yellow" value="2" onclick="view('2')"/>
+        <input type="button" class="btn btn-yellow" value="3" onclick="view('3')"/>
+        <input type="button" class="btn btn-yellow" value="/" onclick="view('/')"/>
+       
+        <input type="button" class="btn btn-grey"  value="4" onclick="view('4')"/>
+        <input type="button" class="btn btn-grey" value="5" onclick="view('5')"/>
+        <input type="button" class="btn btn-grey" value="6" onclick="view('6')"/>
+        <input type="button" class="btn btn-grey" value="-" onclick="view('-')"/>
+        
+        
+              <input type="button" class="btn btn-grey" value="7" onclick="view('7')"/>
+              <input type="button" class="btn btn-grey" value="8" onclick="view('8')"/>
+              <input type="button" class="btn btn-grey" value="9" onclick="view('9')"/>
+              <input type="button" class="btn btn-grey" value="+" onclick="view('+')"/>
+           
+            <input type="button" class="btn btn-grey" value="." onclick="view('.')"/>
+                <input type="button" class="btn btn-grey" value="0" onclick="view('5')"/>
+              
+                <input type="button" class="btn btn-grey" value="*" onclick="view('*')"/>
+                <input type="button" class="btn btn-equal" value="=" onclick="submt()"/>
+            </div>
+  
+</section>
     </body>
 </html>
