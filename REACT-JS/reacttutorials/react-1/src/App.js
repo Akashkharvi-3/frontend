@@ -1,52 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-import Home from './Dummy/Home'
-import About from './Dummy/About'
-import Contact from './Dummy/Contact'
-import User from './user/User'
-
-import Navbar from './Navbar/Navbar';
-/* import Login2 from './Form/Login2'; */
-/* import Registartion from './Form/Registration'; */
-
-/* import Login from './Form/Login'; */
-/* import Clock from '../../react-2/Lifecycle_clock/Clock'; */
-/* import Employees from './Data/Employees' */
-
-/* import Binding from './Binding/Binding';
-import Binding2 from './Binding/Binding2';
- */
+import React,{Component} from "react";
+import Navbar from "./Navbar/Navbar";
+import { BrowserRouter as Router,Route,Switch } from "react-router-dom";
+import ContactApp from "./ContactApp/ContactApp";
+import Index from "./Home/Index";
+class App extends Component {
+render(){
+  return(<div>
+    <Router>
+      <Navbar/>
+      <Switch>
+<Route path="/contact" component={ContactApp}/>
+<Route path="/index" component={Index}/>
+</Switch>
 
 
-/* import Product from './Product/Product' */
-
-
-let App=()=> {
-    return <div>
-
-  <Router>
-  <Navbar/>
+    </Router>
+  </div>)
   
-  <Switch>
-  <Route path="/User" component={User}/>
-    <Route path="/Home" component={Home}/>
-     <Route path="/About" component={About}/>
-     <Route path="/Contact" component={Contact}/>
-  </Switch>
-  </Router>
-        
-{/*         <Registartion/> */}
-        {/* <Login2/> */}
-       {/*  <Login/> */}
-      {/*   <Employees/> */}
-      {/*    <Clock/> */}
-       {/*  <Binding/>
-        <Binding2/> */}
-      {/*   <Counter/> */}
-      {/*   <Product/> */}
-      
- 
-    </div>
-
 }
-export default App
+}
+export default App   
