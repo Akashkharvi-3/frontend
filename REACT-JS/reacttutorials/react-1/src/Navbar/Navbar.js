@@ -4,11 +4,11 @@ class Navbar extends Component{
     render(){
         return (
             <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-                <Link to="/index" className="navbar-brand">React Contact App</Link>
+                <Link to="/index" className="navbar-brand">React Hooks example</Link>
             <div className="ml-auto">
                 <ul className="navbar-nav">
                     <li className="navbar-item">
-                        <Link to="/contact" className="nav-link">Contact</Link>
+                        <Link to="/usestate" className="nav-link">Use state Ex</Link>
                     </li>
                 </ul>
             </div>
