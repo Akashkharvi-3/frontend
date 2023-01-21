@@ -1,15 +1,17 @@
-import Props from './Props/Props'
-import Classprop from './Props/Classprop'
+import React from "react"
+/* import Message from "./Component/Message"  */
+import Counter from "./State/Counter"
+
+/* import Props from './Props/Props' */
+/* import Classprop from './Props/Classprop' */
 let App=()=>{
     return(
         <div>
-        <Props name="akash" place="kundapur"/>
-        <button>click</button>
-        <Props name="kharvi" place="udupi">
-            this is child elemnt
-        </Props>
-        <Classprop name="vigu" place="koni"/>
+   
+        <Counter/>
         
+        
+
         </div>
     )
 }
