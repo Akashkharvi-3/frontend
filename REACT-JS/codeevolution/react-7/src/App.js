@@ -1,18 +1,37 @@
 import React from "react"
-/* import Message from "./Component/Message"  */
-import Counter from "./State/Counter"
+import Navbar from "./Navbar/Navbar"
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+import Addcontact from "./Component/Contacts/Addcontact/Addcontact"
+import Contactlist from "./Component/Contacts/Contactlist/Contactlist"
+import Viewcontact from "./Component/Contacts/Viewcontact/Viewcontact"
 
-/* import Props from './Props/Props' */
-/* import Classprop from './Props/Classprop' */
+import Editcontact from "./Component/Contacts/Editcontact/Editcontact"
+import { Navigate } from "react-router-dom"
+
 let App=()=>{
     return(
-        <div>
-   
-        <Counter/>
+        <>
+       
+       
+        <Router>
+        <Navbar/>
+
+<Routes>
+ <Route path={"/"} element={<Navigate to={'/Contacts/list'}/>}/>
+ <Route path="/contacts/add" element={<Addcontact/>}/>
+ <Route path="/contacts/list" element={<Contactlist/>}/>
+
+ <Route path="/contacts/edit" element={<Editcontact/>}/>
+ <Route path="/contacts/view" element={<Viewcontact/>}/>
+ </Routes>
+ </Router>
+       
+
+       
         
         
 
-        </div>
+        </>
     )
 }
 export default App
