@@ -1,13 +1,42 @@
-<script>
+<!-- <script>
 
 let arr=[{name:"Akash",age:25},
 {name:"khr",age:29},
+{name:"rrr",age:49},
 {place:"kundapur"}]
 
-const findItem=arr.filter((n)=>{
+const filtItem=arr.filter((n)=>{
+    return n.age>26
+
+})
+console.log(filtItem) -->
+
+<!-- /* 0
+: output
+{name: 'khr', age: 29}
+length
+: 
+1
+[[Prototype]] */ -->
+
+<script>
+
+let arrr=[{name:"Akash",age:25},
+{name:"khr",age:29},
+{name:"rrr",age:49},
+{place:"kundapur"}]
+
+const findItem=arrr.find((n)=>{
     return n.age>26
 
 })
 console.log(findItem)
+/* {name: 'khr', age: 29}
+age
+: 
+29  output
+name
+: 
+"khr" */
 
 </script> 
