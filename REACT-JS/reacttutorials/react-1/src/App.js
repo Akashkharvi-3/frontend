@@ -1,24 +1,23 @@
 import React,{Component} from "react";
-
-
 import Navbar from "./Navbar/Navbar";
-import Message from "./HookEx/Message";
-import { BrowserRouter as Router,Route,Switch } from "react-router-dom";import Counter from "./HookEx/Counter";
-
+import Message from  './Message/Message'
+import {Provider} from  'react-redux'
+import {store} from './redux/store'
+import { BrowserRouter as Router,Route,Switch } from "react-router-dom";
 
 class App extends Component {
 render(){
   return(<div>
+    <Provider store={store}>
     <Router>
       <Navbar/>
-    
       <Switch>
-<Route path="/usestate" component={Message}/>
-<Route path="/counter" component={Counter}/>
+<Route path="/contact" component={Message}/>
+
 </Switch>
 
-
     </Router>
+    </Provider>
   </div>)
   
 }
