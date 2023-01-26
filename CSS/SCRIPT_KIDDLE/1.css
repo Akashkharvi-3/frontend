@@ -1,0 +1,11 @@
+.one{
+   height: 300px;
+   width: 300px; 
+   
+ 
+   border: 2px solid blue; /* it comes black in border */
+   background-color:aquamarine;
+   background-image: url(fish-1.jpg);
+
+
+}
