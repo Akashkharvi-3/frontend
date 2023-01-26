@@ -20,7 +20,7 @@ const Contactlist = () => {
         <div className='col-md-6'>
             <form className="row">
                 <div className='col'>
-            <div className='mb-2'>
+            <div className='mb-'>
             <input type="text" className='form-control' placeholder='Search names '/>
    </div>
    </div>
