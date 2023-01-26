@@ -1,22 +1,32 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import {Link} from 'react-router-dom'
 
-class Navbar extends Component{
-    render(){
-        return (
-            <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-                <Link to="/index" className="navbar-brand">React Hooks example</Link>
-            <div className="ml-auto">
-                <ul className="navbar-nav">
-                    <li className="navbar-item">
-                        <Link to="/reduxEx" className="nav-link">Message with redux </Link>
-                        
-                     
-                    </li>
-                </ul>
-            </div>
-            </nav>
-        )
-    }
+const Navbar = () => {
+  return (
+    <React.Fragment>
+    <nav className='navbar navbar-dark bg-dark navbar-expand-lg'>
+        <Link to="/home" className='navbar-brand'>React user comp</Link>
+        <div className='ml-auto'>
+            <ul className='navbar-nav'>
+                <li className='nav-item'>
+                  <Link to="/users" className='nav-link'>User</Link></li>
+                  <li className='nav-item'>
+              
+              
+                  
+                  </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    
+    
+    </React.Fragment>
+
+      
+
+  )
 }
+
 export default Navbar

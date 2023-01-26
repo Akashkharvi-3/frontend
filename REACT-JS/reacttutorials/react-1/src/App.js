@@ -1,25 +1,24 @@
-import React,{Component} from "react";
-import Navbar from "./Navbar/Navbar";
-import Message from  './Message/Message'
-import {Provider} from  'react-redux'
-import {store} from './redux/store'
-import { BrowserRouter as Router,Route,Switch } from "react-router-dom";
-
-class App extends Component {
-render(){
-  return(<div>
-    <Provider store={store}>
+import React from 'react'
+import Navbar from './Navbar/Navbar'
+import Home from './Users/Home'
+import Users from './Users/Users' 
+import {BrowserRouter as Router,Route,Switch } from 'react-router-dom'
+const App = () => {
+  return (
+    <div>
     <Router>
-      <Navbar/>
-      <Switch>
-<Route path="/contact" component={Message}/>
-
-</Switch>
-
-    </Router>
-    </Provider>
-  </div>)
+       <Navbar/>
+ <Switch> 
+     
+      
+   <Route path="/home" component={Home}/>
+   <Route path="/users" component={Users}/>
+   
+   </Switch> 
+   </Router>
   
+    </div>
+  )
 }
-}
-export default App   
+
+export default App
