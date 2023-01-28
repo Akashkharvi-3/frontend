@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
 import Home from './Users/Home'
-import Users from './Users/Users' 
+import UsersApp from './Users/UsersApp' 
 import {BrowserRouter as Router,Route,Switch } from 'react-router-dom'
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
      
       
    <Route path="/home" component={Home}/>
-   <Route path="/users" component={Users}/>
+   <Route path="/users" component={UsersApp}/>
    
    </Switch> 
    </Router>
