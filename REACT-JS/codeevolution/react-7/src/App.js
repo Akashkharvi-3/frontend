@@ -1,4 +1,4 @@
-import React from "react"
+/* import React from "react"
 import Navbar from "./Navbar/Navbar"
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import Addcontact from "./Component/Contacts/Addcontact/Addcontact"
@@ -17,7 +17,7 @@ let App=()=>{
         <Navbar/>
 
 <Routes>
- <Route path={"/"} element={<Navigate to={'/Contacts/list'}/>}/>
+ <Route path={"/"} element={<Navigate to={'/contacts/list'}/>}/>
  <Route path="/contacts/add" element={<Addcontact/>}/>
  <Route path="/contacts/list" element={<Contactlist/>}/>
 
@@ -34,4 +34,4 @@ let App=()=>{
         </>
     )
 }
-export default App
+export default App */

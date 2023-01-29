@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import {Link} from 'react-router-dom'
 
 const Addcontact = () => {
@@ -40,8 +40,8 @@ const Addcontact = () => {
             
           </div>
           <div className='mb-2'>
-            <input type="submit" className='btn btn-success ' value="create"/>
-          <Link to={"/contact/list"} className="btn btn-dark ml-2">Cancel</Link>
+            <input type="submit" className='btn btn-success' value="create"/>
+          <Link to={"/contacts/list"} className="btn btn-dark ml-2">Cancel</Link>
           </div>
 
         </form>
@@ -54,3 +54,4 @@ const Addcontact = () => {
 }
 
 export default Addcontact
+ */
