@@ -1,24 +1,74 @@
-import React from 'react'
-import Navbar from './Navbar/Navbar'
-import Home from './Users/Home'
-import UsersApp from './Users/UsersApp' 
-import {BrowserRouter as Router,Route,Switch } from 'react-router-dom'
-const App = () => {
+/* import React, { useEffect, useState } from "react";
+
+let Digital = () => {
+  let [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    // component did mount
+    let timer = setInterval(() => {
+      setCurrentTime(new Date().toLocaleTimeString());
+    }, 1000);
+    return () => {
+      // componentWillUnmount
+      clearInterval(timer);
+    };
+  });
+
   return (
-    <div>
-    <Router>
-       <Navbar/>
- <Switch> 
+    <React.Fragment>
+      <div className="container mt-3">
+        <div className="row">
+          <div className="col">
+            <div className="card text-center">
+              <div className="card-header bg-success text-white">
+                <p className="h4">Digital Watch - Functional</p>
+              </div>
+              <div className="card-body">
+                <h3 className="display-3">{currentTime}</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+};
+export default Digital; */
+
+
+import React,{useState,useEffect} from "react";
+const App=()=>{
+  let [currentTime,setCurrentTime]=useState(new Date().toLocaleTimeString())
+  useEffect(()=>{
+    let time=setInterval(()=>{
+      setCurrentTime(new Date().toLocaleTimeString())
+
+    },1000)
+    return()=>{
+      clearInterval(time)
+    }
+ })
+
+
+return(
+  <div className="container">
+  <div className="row">
+  <div className="col">
+    <div className="card text-center">
+  <div className="card-header bg-dark text-white">
+    <p className="h4">Digital watch function</p>
+  </div>
+    <div className="card-body">
+      <div className="h3">{currentTime}</div>
      
-      
-   <Route path="/home" component={Home}/>
-   <Route path="/users" component={UsersApp}/>
-   
-   </Switch> 
-   </Router>
-  
     </div>
-  )
-}
+  </div>
+  </div>
+  </div>
+  </div>
+)}
+
+
+
 
 export default App
