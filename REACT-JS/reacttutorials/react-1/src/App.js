@@ -1,74 +1,47 @@
-/* import React, { useEffect, useState } from "react";
-
-let Digital = () => {
-  let [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
-
-  useEffect(() => {
-    // component did mount
-    let timer = setInterval(() => {
-      setCurrentTime(new Date().toLocaleTimeString());
-    }, 1000);
-    return () => {
-      // componentWillUnmount
-      clearInterval(timer);
-    };
-  });
+import  {useState} from 'react'
+let App=()=>{
+  const [todoList,seTtodoList]=useState([])//button
+  
+  const [newTask,setNewTask]=useState("")//input
+  const handleChange=(event)=>{
+    setNewTask(event.target.value)
+  }
+  const addTask=()=>{
+   
+    seTtodoList([...todoList,newTask])
+  }
+  function deleteTask(id) {
+    const removeItem = todoList.filter((task) => {
+      return task.id !== id;
+    });
+    seTtodoList(removeItem);
+  }
 
   return (
-    <React.Fragment>
-      <div className="container mt-3">
-        <div className="row">
-          <div className="col">
-            <div className="card text-center">
-              <div className="card-header bg-success text-white">
-                <p className="h4">Digital Watch - Functional</p>
-              </div>
-              <div className="card-body">
-                <h3 className="display-3">{currentTime}</h3>
-              </div>
-            </div>
-          </div>
-        </div>
+<div className='container mt-5'>
+    <div className="App">
+      <div className="addTask">
+        <input onChange={handleChange}/>    <button onClick={addTask}>ADD TASK BUTTON</button>
       </div>
-    </React.Fragment>
-  );
-};
-export default Digital; */
-
-
-import React,{useState,useEffect} from "react";
-const App=()=>{
-  let [currentTime,setCurrentTime]=useState(new Date().toLocaleTimeString())
-  useEffect(()=>{
-    let time=setInterval(()=>{
-      setCurrentTime(new Date().toLocaleTimeString())
-
-    },1000)
-    return()=>{
-      clearInterval(time)
-    }
- })
-
-
-return(
-  <div className="container">
-  <div className="row">
-  <div className="col">
-    <div className="card text-center">
-  <div className="card-header bg-dark text-white">
-    <p className="h4">Digital watch function</p>
-  </div>
-    <div className="card-body">
-      <div className="h3">{currentTime}</div>
-     
+      <div className='list'>
+        {
+          
+          todoList.map((task)=>{
+            return <div>
+              <ul key={task.id}></ul>
+             
+              <h1>{task}</h1>
+              <button onClick={()=>deleteTask(addTask)}>X</button>
+              </div>
+          })
+        }
+      </div>
+   
+      </div>
     </div>
-  </div>
-  </div>
-  </div>
-  </div>
-)}
+  
+  )
 
 
-
-
-export default App
+}
+export  default App
