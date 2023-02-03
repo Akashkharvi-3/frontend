@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='ml-auto'>
             <ul className='navbar-nav'>
                 <li className='nav-item'>
-                  <Link to="/users" className='nav-link'>User</Link></li>
+                  <Link to="/product" className='nav-link'>Product</Link></li>
                   <li className='nav-item'>
               
               
