@@ -1,19 +1,15 @@
-
-.out{
-    height: 350px;
-    width: 350px;
-    background-color:yellow ;
+div{
+    height: 150px;
+    width: 150px;
    
-         display: flex;  /* display:grid */
-        justify-content: center;
-        align-items: center;
+    background-color: red;
+ margin: auto;
+ position: absolute;
+
+ top: 0px;
+ bottom: 0px;
+ left: 0px;
+ right: 0px;
+
 
 }
-
-.in{
-    height: 100px;
-    width: 100px;
-    background-color:red ;
-    
-  
-    }
