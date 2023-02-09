@@ -1,56 +1,63 @@
-import React,{useState} from "react";
+import React from 'react'
+import { useDispatch,useSelector } from 'react-redux'
+import { incrAction ,decrAction} from '../redux/product/product.action'
 
-let Product=()=>{
-   let [produc,setproduc]=useState({
-    p_name:"redmi",
-    image:"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTAnqoSykIK0KT3nZe6tfIm9JevKYk2pQOEkpXHzuv06FokYtb6m_QvMZFj_iw&usqp=CAc",
-    price:8000,
-    qty:1
-})
-
-let decHandler=()=>{
- setproduc({...produc,qty:produc.qty-1})   
-}
-let incHandler=()=>{
-    setproduc({...produc,qty:produc.qty+1})
-    
+const Product = () => {
+    let dispatch=useDispatch()
+    let product=useSelector((state)=>
+    {
+    return state.product
     }
-return(
-    <div>
-        <div className="container mt-5">
-            <div className="row">
-                <div className="col">
-                    <table className="table table-hover">
-                        <thead className="bg-dark text-white">
-                            <tr>
-                                <th>P_Name</th>
-                                <th>Image</th>
-                                <th>Price</th>
-                                <th>Qty</th>
-                                <th>Total</th>
-                            </tr>
-                            </thead> 
+    )
+  
+    let incHandler=()=>{
+        dispatch(incrAction())
+
+    }
+    let decHandler=()=>{
+        dispatch(decrAction()) 
+    }
+  return (
+    <div className='container mt-5'>
+         <div className='row'>
+         <div className='col-md-6'>
+            <table className='table table-hover'>
+                <thead className='bg-dark text-white'>
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>total</th>
+                    </tr>
+                    </thead>
+                <tbody>
+                    {
+                        <tr>
+                        <td>{product.name}</td>
+                        <td><img src={product.image} alt="" height="150px"/></td>
+                        <td>{product.price}</td>
+                        <td><i className='fa fa-minus-circle' onClick={decHandler}></i>{product.qty}<i className='fa fa-plus-circle' onClick={incHandler}></i></td>
+                        <td>{product.qty*product.price}</td>
+
+
+                    </tr>
+                        
+                        
                        
-                        <tbody>
-                            {
-                            <tr>
-                                <td>{produc.p_name}</td>
-                                 <td><img src={produc.image} alt="" height="160px" width="100px"></img></td>
-                                  <td>{produc.price}</td>
-                                   <td><i className="fa fa-minus-circle" onClick={decHandler}></i>{produc.qty}<i className="fa fa-plus-circle" onClick={incHandler}></i></td>
-                                   
-                                    <td>{produc.qty*produc.price}</td>
-                            </tr>
-}   
-                        </tbody>
+                    }
+
+              
+                </tbody>
                   
-                        </table>
 
-                </div>
-            </div>
-        </div>
+
+            </table>
+
+         </div>
+         </div>
     </div>
-)
-
+  )
 }
+
 export default Product

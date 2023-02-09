@@ -1,27 +1,26 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import store from './redux/product/store';
-import { Provider } from 'react-redux'
+import Message from './Message/Message'
+import {store} from './redux/store'
 import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
-import Product from './Product/Product'
+import { Provider } from 'react-redux'
 
  
 class App extends React.Component{
   render(){
     return (
     <div>
-  <Provider store={store}>
+      <Provider store={store}>
       <Router>
       <Navbar/>
         <Switch>
-        <Route path="/counter" component={Product}/>
+        <Route path="/redux" component={Message}/>
        
         
       </Switch>
 
       </Router>
       </Provider>
-  
     </div>)
   }
 }
