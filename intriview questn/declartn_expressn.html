@@ -1,0 +1,14 @@
+<script>        /* callback */
+function hello(param)
+{
+console.log("print value",param)  
+param()
+return "hiiii"
+}
+function call(){
+    console.log("i am callback function")
+}
+
+let pp=hello(call)
+console.log(pp)
+</script>
