@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='ml-auto'>
             <ul className='navbar-nav'>
                 <li className='nav-item'>
-                  <Link to="/redux" className='nav-link'>Message with redux</Link></li>
+                  <Link to="/counter" className='nav-link'>Message with redux</Link></li>
                   <li className='nav-item'>
               
               

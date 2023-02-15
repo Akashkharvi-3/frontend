@@ -1,9 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import store from './redux/product/store';
-import { Provider } from 'react-redux'
+import Message from './Message/Message'
+import Provider from 'react'
+import {store} from './redux/store'
 import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
-import Product from './Product/Product'
+/*  */
 
  
 class App extends React.Component{
@@ -14,14 +15,14 @@ class App extends React.Component{
       <Router>
       <Navbar/>
         <Switch>
-        <Route path="/counter" component={Product}/>
+        <Route path="/redux" component={Message}/>
        
         
       </Switch>
 
       </Router>
+   
       </Provider>
-  
     </div>)
   }
 }
