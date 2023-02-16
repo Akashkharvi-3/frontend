@@ -1,29 +1,15 @@
-import React from 'react'
-import Navbar from './Navbar/Navbar'
-import Message from './Message/Message'
-import Provider from 'react'
-import {store} from './redux/store'
-import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
-/*  */
+import React from "react";
+import Navbar from "./Navbar/Navbar";
+import CompA from "./Props/CompA";
 
- 
-class App extends React.Component{
-  render(){
-    return (
+const App=()=>{
+  return(
     <div>
-  <Provider store={store}>
-      <Router>
       <Navbar/>
-        <Switch>
-        <Route path="/redux" component={Message}/>
-       
+      <CompA/>  
         
-      </Switch>
-
-      </Router>
-   
-      </Provider>
-    </div>)
-  }
+      
+    </div>
+  )
 }
 export default App
