@@ -1,14 +1,23 @@
-import React from "react";
-class CompB extends React.Component
-{
-    render(){
-        return(
-        <div>
-           
-        <h1>compB </h1>
-        <pre>{JSON.stringify(this.props)}</pre>
-        </div>
+/* 
+const CompB = (props) => {
+  return (
+    <div>
+      <h1>comp bb</h1>
+      <pre>{JSON.stringify(props)}</pre> 
+      <h1>full name:{props.place}</h1>
+      
+    </div>
+  )
+}
 
-    )
-}}
+export default CompB */
+const CompB=(props)=>{
+  return(
+    <div>
+<pre>{JSON.stringify(props)}</pre>
+<h1>full name:{props.two}</h1>
+    </div>
+  )
+}
 export default CompB
+
