@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
-import CompA from "./Props/CompA";
+import Comp from "./Comp/Comp";
+
 
 const App=()=>{
   return(
     <div>
       <Navbar/>
-      <CompA/>  
+      <Comp/>
+     
         
       
     </div>
