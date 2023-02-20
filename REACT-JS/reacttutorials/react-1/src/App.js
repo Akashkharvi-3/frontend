@@ -1,13 +1,15 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
-import Comp from "./Didmount/Didmount";
+import './App.css'
+
+
 
 
 const App=()=>{
   return(
     <div>
       <Navbar/>
-      <Comp/>
+   
      
         
       
