@@ -1,9 +1,8 @@
 import React from "react";
 
 
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import './App.css'
+import Login from "./Login/Login";
+
 
 
 
@@ -11,10 +10,9 @@ import './App.css'
 const App=()=>{
   return(
     <>
+    <Login/>
 
    
-      <Navbar/>
-      <Header/>
     
      
         
