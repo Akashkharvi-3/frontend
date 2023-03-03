@@ -1,37 +1,25 @@
-/* import React from "react"
-import Navbar from "./Navbar/Navbar"
-import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
-import Addcontact from "./Component/Contacts/Addcontact/Addcontact"
-import Contactlist from "./Component/Contacts/Contactlist/Contactlist"
-import Viewcontact from "./Component/Contacts/Viewcontact/Viewcontact"
+import React,{useState} from 'react'
 
-import Editcontact from "./Component/Contacts/Editcontact/Editcontact"
-import { Navigate } from "react-router-dom"
 
-let App=()=>{
+function App(){
+    const [circles,setCircles]=useState([])
+    const addcircle=()=>{
+        const newCircle=<div style={{
+           
+            width:'150px',
+        height:'150px',borderRadius:'50%',
+        
+        
+        background:'red',
+        margin:'11px',
+    }}></div>
+        setCircles([...circles,newCircle])
+    }
     return(
         <>
-       
-       
-        <Router>
-        <Navbar/>
-
-<Routes>
- <Route path={"/"} element={<Navigate to={'/contacts/list'}/>}/>
- <Route path="/contacts/add" element={<Addcontact/>}/>
- <Route path="/contacts/list" element={<Contactlist/>}/>
-
- <Route path="/contacts/edit" element={<Editcontact/>}/>
- <Route path="/contacts/view" element={<Viewcontact/>}/>
- </Routes>
- </Router>
-       
-
-       
-        
-        
-
-        </>
-    )
-}
-export default App */
+        <button onClick={addcircle}>Add circle</button>
+        {
+            circles.map((circle,index)=><div key={index}>
+            {circle}</div>)}</>)
+        }
+ export default App
